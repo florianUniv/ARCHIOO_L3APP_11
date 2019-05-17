@@ -9,6 +9,7 @@ public class LigneCommande implements IHM{
 		
 		double nb1=0;
 		double nb2=0;
+		String op="";
 		
 		do{
 			try{
@@ -30,11 +31,9 @@ public class LigneCommande implements IHM{
 			}
 			catch(NumberFormatException e){
 				System.out.println("Veuillez saisir un nombre SVP");
-			}
-			
+			}	
 		}while(true);
 		
-		String op="";
 		
 		do{
 			try{
@@ -51,7 +50,6 @@ public class LigneCommande implements IHM{
 		}while(true);
 			
 		Calculator c = new Calculator(nb1, nb2, op);
-		
 		double resultat = 0;
 		
 		try{
@@ -62,8 +60,6 @@ public class LigneCommande implements IHM{
 		catch (DivisionByZeroException e) {
 			System.out.println("Impossible de diviser par zéro!");
 		}
-		
 	}
-	
 	
 }
