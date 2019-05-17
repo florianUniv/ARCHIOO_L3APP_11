@@ -1,6 +1,6 @@
 
 public interface Operation {
 
-	public double calculer(double nombre1, double nombre2);
+	public double calculer(double nombre1, double nombre2) throws DivisionByZeroException;
 	
 }

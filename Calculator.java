@@ -11,7 +11,7 @@ public class Calculator {
 		this.op=op;
 	}
 	
-	public double calculer(){
+	public double calculer() throws DivisionByZeroException{
 		
 		CalculatorConf c = new CalculatorConf(nb1, nb2, op);
 		double resultat = c.getOperation().calculer(nb1, nb2);

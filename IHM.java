@@ -2,6 +2,6 @@
 
 public interface IHM {
 
-	public void lancer();	
+	public void lancer() throws DivisionByZeroException;	
 	
 }
